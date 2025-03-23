@@ -13,7 +13,6 @@ $(document).ready(function () {
   app.route({ view: "feature" });
   app.route({ view: "cars" });
   app.route({ view: "team" });
-  app.route({ view: "testimonial" });
   app.route({ view: "contact" });
 
   // Highlight the active link in navbar
@@ -28,5 +27,20 @@ $(document).ready(function () {
   highlightActiveLink();
   $(window).on("hashchange", function () {
     highlightActiveLink();
+  });
+
+  // Login and Registration quick switch in Modal window
+  $(document).ready(function () {
+    $("#switchToRegister").on("click", function (e) {
+      e.preventDefault();
+      $("#loginForm").hide();
+      $("#registerForm").show(); 
+    });
+  
+    $("#switchToLogin").on("click", function (e) {
+      e.preventDefault();
+      $("#registerForm").hide();
+      $("#loginForm").show();
+    });
   });
 });

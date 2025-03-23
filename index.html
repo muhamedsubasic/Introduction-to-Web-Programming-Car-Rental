@@ -70,21 +70,111 @@
                       <a href="#service" class="nav-item nav-link">Service</a>
                       
                       <div class="nav-item dropdown">
-                          <a href="#btops" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Pages</a>
+                          <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Pages</a>
                           <div class="dropdown-menu m-0">
                               <a href="#feature" class="dropdown-item">Our Feature</a>
                               <a href="#cars" class="dropdown-item">Our Cars</a>
                               <a href="#team" class="dropdown-item">Our Team</a>
-                              <a href="#testimonial" class="dropdown-item">Testimonial</a>
                           </div>
                       </div>
                       <a href="#contact" class="nav-item nav-link">Contact</a>
                   </div>
-                  <a href="#" class="btn btn-primary rounded-pill py-2 px-4">Get Started</a>
+                  <a class="btn btn-primary rounded-pill py-2 px-4" data-bs-toggle="modal" data-bs-target="#getStarted">Get Started</a>
               </div>
           </nav>
       </div>
     </div>
+
+    <!-- Login and Register Modal -->
+    <div class="modal fade modal-fullscreen" id="getStarted" tabindex="-1" aria-labelledby="Get Started" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content bg-secondary">
+          <div class="modal-header">
+            <h5 class="text-primary mb-4 bg-secondary rounded">Login or Register</h5>
+          </div>
+          <div class="modal-body">
+            <!-- Login Form -->
+            <div id="loginForm">
+              <div class="col-xl">
+                <div class="bg-secondary p-5 rounded">
+                  <form>
+                    <div class="row g-4">
+                      <div class="col-12">
+                        <div class="form-floating">
+                          <input type="email" class="form-control" id="loginEmail" placeholder="Your Email" />
+                          <label for="loginEmail">Your Email</label>
+                        </div>
+                      </div>
+                      <div class="col-12">
+                        <div class="form-floating">
+                          <input type="password" class="form-control" id="loginPassword" placeholder="Password" />
+                          <label for="loginPassword">Password</label>
+                        </div>
+                      </div>
+                      <div class="col-12">
+                        <button type="submit" class="btn btn-primary w-100 py-3">Login</button>
+                      </div>
+                      <div class="col-12 text-center">
+                        <a href="#" id="switchToRegister">Register Now</a>
+                      </div>
+                    </div>
+                  </form>
+                </div>
+              </div>
+            </div>
+    
+            <!-- Register Form Hidden at first -->
+            <div id="registerForm" style="display: none;">
+              <div class="col-xl">
+                <div class="bg-secondary p-5 rounded">
+                  <form>
+                    <div class="row g-4">
+                      <div class="col-lg-12 col-xl-6">
+                        <div class="form-floating">
+                          <input type="text" class="form-control" id="name" placeholder="Your Name" />
+                          <label for="name">Your Name</label>
+                        </div>
+                      </div>
+                      <div class="col-lg-12 col-xl-6">
+                        <div class="form-floating">
+                          <input type="email" class="form-control" id="email" placeholder="Your Email" />
+                          <label for="email">Your Email</label>
+                        </div>
+                      </div>
+                      <div class="col-lg-12 col-xl-6">
+                        <div class="form-floating">
+                          <input type="phone" class="form-control" id="phone" placeholder="Phone" />
+                          <label for="phone">Your Phone</label>
+                        </div>
+                      </div>
+                      <div class="col-lg-12 col-xl-6">
+                        <div class="form-floating">
+                          <input type="text" class="form-control" id="project" placeholder="Project" />
+                          <label for="project">Your Project</label>
+                        </div>
+                      </div>
+                      <div class="col-12">
+                        <div class="form-floating">
+                          <input type="text" class="form-control" id="subject" placeholder="Subject" />
+                          <label for="subject">Subject</label>
+                        </div>
+                      </div>
+                      <div class="col-12">
+                        <button type="submit" class="btn btn-primary w-100 py-3">Register</button>
+                      </div>
+                      <div class="col-12 text-center">
+                        <a href="#" id="switchToLogin">Already have an account? Login</a>
+                      </div>
+                    </div>
+                  </form>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- End of Login Register modal -->
 
     <main id="spapp" role="main">    
       <section id="home" data-load="home.html"></section>
@@ -93,7 +183,6 @@
       <section id="feature" data-load="feature.html"></section>
       <section id="cars" data-load="cars.html"></section>
       <section id="team" data-load="team.html"></section>
-      <section id="testimonial" data-load="testimonial.html"></section>
       <section id="contact" data-load="contact.html"></section>
     </main>
 
@@ -162,7 +251,7 @@
     <!-- Footer End -->
 
     <!-- Back to Top -->
-    <a href="#btops" class="btn btn-secondary btn-lg-square rounded-circle back-to-top"><i class="fa fa-arrow-up"></i></a>
+    <a href="#" class="btn btn-secondary btn-lg-square rounded-circle back-to-top"><i class="fa fa-arrow-up"></i></a>
 
     <!-- JavaScript Libraries -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>

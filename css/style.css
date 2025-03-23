@@ -1,3 +1,4 @@
+/*** spapp main functionality ***/
 main#spapp > section {
   display: none;
 }
@@ -10,7 +11,15 @@ main#spapp > section:target {
 main#spapp > section:target ~ * {
   display: none;
 }
+/*** Login and Register from visible or not ***/
+#loginForm {
+  display: block; 
+}
+#registerForm {
+  display: none;
+}
 
+/*** Back to Top button ***/
 .back-to-top {
   position: fixed;
   right: 30px;

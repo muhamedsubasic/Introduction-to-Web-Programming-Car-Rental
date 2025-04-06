@@ -7,5 +7,8 @@ RentACar is a single-page application (SPA) for managing car rentals. It provide
 - **Responsive Design**: Optimized for all devices (desktop, tablet, mobile).
 - **Single-Page Application (SPA)**: Seamless navigation without page reloads.
 - **ER Diagram**: Example showchase of backend look.
-### ER Diagram
-![Entity-Relationship Diagram](img/ERDiagram.png)
+### ER Diagram (updated)
+![Entity-Relationship Diagram](img/ERDiagram_v2.png)
+### Features - Milestone 2
+- **Dao Base Files**: Implementation of necessary DAO files (from ER Diagram) for later use.
+- **SQL Database Script**: SQL Script for database creation.
